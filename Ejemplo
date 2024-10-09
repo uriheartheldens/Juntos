@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Súper Dinámica</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff8a00, #e52e71);
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: slideDown 1s ease-out;
+        }
+
+        /* Animación para el header */
+        @keyframes slideDown {
+            from { top: -100px; opacity: 0; }
+            to { top: 0; opacity: 1; }
+        }
+
+        /* Sección dinámica */
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px auto;
+            width: 70%;
+            line-height: 1.6;
+            color: #f3f3f3;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Botón interactivo */
+        .boton-dinamico {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #e52e71;
+            color: white;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .boton-dinamico:hover {
+            background-color: #ff8a00;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Elementos animados al desplazarse */
+        .caja-colorida {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 50%;
+            animation: bounce 2s infinite;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header de la página -->
+    <header>
+        ¡Bienvenido a una Página Súper Dinámica!
+    </header>
+
+    <!-- Sección principal -->
+    <section>
+        <h1>Explora Colores y Dinamismo</h1>
+        <p>Esta página utiliza un diseño atractivo con una combinación de colores vibrantes y animaciones sutiles para crear una experiencia visual dinámica. ¡Interactúa con los elementos y diviértete viendo cómo cobran vida!</p>
+        
+        <!-- Elemento animado -->
+        <div class="caja-colorida"></div>
+
+        <!-- Botón interactivo -->
+        <button class="boton-dinamico">Haz Click Aquí</button>
+    </section>
+
+    <!-- Footer de la página -->
+    <footer>
+        © 2024 Página Dinámica. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
